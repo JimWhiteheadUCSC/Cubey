@@ -49,6 +49,7 @@ class Smiley extends Phaser.Scene {
         my.sprite.dimple = this.add.sprite(this.smileX, this.smileY, "smileDimple");
         
         // Create the sprite for the left and right hands
+        // Handedness is from the player's perspective, not Cubey's
         my.sprite.leftOpenHand = this.add.sprite(this.leftHandX, this.lefthandY, "handOpen");
         my.sprite.leftOpenHand.flipX = true;   // flip sprite to have thumb on correct side
         my.sprite.rightOpenHand = this.add.sprite(this.rightHandX, this.rightHandY, "handOpen");
